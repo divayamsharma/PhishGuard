@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhishGuard — Fraud Email Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="static/style.css"/>
+</head>
+<body>
+
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="nav-logo-icon">&#9670;</span>
+        <span class="nav-logo-text">PhishGuard</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how" class="nav-link">How it works</a>
+      </div>
+      <a href="#analyzer" class="btn btn-primary btn-sm">Try it free</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">Free &nbsp;·&nbsp; No data stored &nbsp;·&nbsp; Instant results</div>
+    <h1 class="hero-title">Detect Email Fraud<br><span class="hero-gradient">Before It's Too Late</span></h1>
+    <p class="hero-subtitle">Paste any suspicious email and get a fraud risk score in under a second.<br>Powered by pattern analysis across 16 fraud indicators.</p>
+    <div class="hero-ctas">
+      <a href="#analyzer" class="btn btn-primary btn-lg">Analyze an Email &rarr;</a>
+      <a href="#how" class="btn btn-outline btn-lg">How it works</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span>5</span><label>Keyword Categories</label></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><span>11</span><label>Regex Patterns</label></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><span>3</span><label>Risk Levels</label></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><span>&lt;1s</span><label>Analysis Time</label></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">What we detect</div>
+        <h2 class="section-title">Built to catch every type of fraud</h2>
+        <p class="section-sub">PhishGuard checks your email against a library of known fraud patterns used by real attackers.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon fi-red">🎣</div>
+          <h3>Phishing &amp; Credential Theft</h3>
+          <p>Detects fake login prompts, "verify your account" requests, password reset scams, and credential harvesting links.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-amber">💸</div>
+          <h3>Financial Fraud</h3>
+          <p>Flags wire transfer requests, lottery winnings, Nigerian prince schemes, inheritance funds, and "guaranteed return" traps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-purple">🎭</div>
+          <h3>Impersonation</h3>
+          <p>Identifies fake IRS, Microsoft, Apple, PayPal, Amazon, and government agency notices designed to steal your trust.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-blue">⏰</div>
+          <h3>Urgency &amp; Pressure Tactics</h3>
+          <p>Spots high-pressure language like "act now", "expires today", and "account suspended" used to rush victims into mistakes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-green">🔑</div>
+          <h3>Sensitive Data Requests</h3>
+          <p>Catches direct asks for passwords, PINs, SSNs, bank account numbers, and credit card details including CVV codes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-pink">🔗</div>
+          <h3>Suspicious Links</h3>
+          <p>Detects raw IP address links, shortened URLs (bit.ly, tinyurl), and generic "click here" anchors used to hide destinations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section section-alt" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Process</div>
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">Three steps from suspicious email to clear verdict.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Paste the email</h3>
+          <p>Copy the full email content — subject, body, and any links — into the analyzer below.</p>
+        </div>
+        <div class="step-arrow">&rarr;</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>16 checks run instantly</h3>
+          <p>The engine scores keyword categories and regex patterns, computing a weighted additive risk score.</p>
+        </div>
+        <div class="step-arrow">&rarr;</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Get your verdict</h3>
+          <p>See a 0–100 risk score, a Safe / Suspicious / High Risk badge, and every triggered flag explained.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk levels explainer -->
+  <section class="section" id="levels">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Risk Levels</div>
+        <h2 class="section-title">What the scores mean</h2>
+      </div>
+      <div class="levels-grid">
+        <div class="level-card level-safe">
+          <div class="level-score">0 – 30</div>
+          <div class="level-badge badge-safe">Safe</div>
+          <p>No significant fraud indicators. The email appears legitimate and can likely be trusted.</p>
+        </div>
+        <div class="level-card level-suspicious">
+          <div class="level-score">31 – 60</div>
+          <div class="level-badge badge-suspicious">Suspicious</div>
+          <p>Some patterns match known fraud techniques. Proceed with caution and verify the sender independently.</p>
+        </div>
+        <div class="level-card level-high">
+          <div class="level-score">61 – 100</div>
+          <div class="level-badge badge-high">High Risk</div>
+          <p>Multiple strong fraud indicators detected. Do not click links, reply, or provide any information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyzer -->
+  <section class="section section-alt" id="analyzer">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Live Tool</div>
+        <h2 class="section-title">Analyze an email now</h2>
+        <p class="section-sub">Paste below and hit Analyze. Results appear instantly on this page.</p>
+      </div>
+
+      <div class="card input-card">
+        <div class="input-card-header">
+          <div class="input-card-title">
+            <span class="input-card-icon">✉</span>
+            Email Content
+          </div>
+          <span id="charCount" class="char-count">0 characters</span>
+        </div>
+        <textarea
+          id="emailInput"
+          class="email-textarea"
+          placeholder="Paste the full email here — subject, body, links, everything..."
+          rows="10"
+        ></textarea>
+        <div class="button-row">
+          <button id="analyzeBtn" class="btn btn-primary" onclick="analyzeEmail()">
+            <span class="btn-icon">&#9650;</span>
+            Analyze Email
+          </button>
+          <button class="btn btn-ghost" onclick="clearAll()">Clear</button>
+        </div>
+      </div>
+
+      <div id="resultCard" class="card result-card hidden">
+        <div class="result-header">
+          <span class="result-header-label">Analysis Result</span>
+          <div id="riskBadge" class="risk-badge">--</div>
+        </div>
+
+        <div class="result-top">
+          <div class="gauge-wrapper">
+            <svg class="gauge-svg" viewBox="0 0 120 120" width="160" height="160">
+              <circle class="gauge-track" cx="60" cy="60" r="50"
+                fill="none" stroke="#1a1a2e" stroke-width="10"
+                stroke-dasharray="251.2" stroke-dashoffset="0"
+                stroke-linecap="round"
+                transform="rotate(-90 60 60)"/>
+              <circle id="gaugeArc" class="gauge-arc" cx="60" cy="60" r="50"
+                fill="none" stroke="#7c3aed" stroke-width="10"
+                stroke-dasharray="251.2" stroke-dashoffset="251.2"
+                stroke-linecap="round"
+                transform="rotate(-90 60 60)"/>
+              <text id="gaugeScore" x="60" y="55"
+                text-anchor="middle" dominant-baseline="middle"
+                class="gauge-number">0</text>
+              <text x="60" y="74"
+                text-anchor="middle"
+                class="gauge-label">/ 100</text>
+            </svg>
+          </div>
+
+          <div class="risk-info">
+            <p class="risk-description" id="riskDesc">Analysis pending</p>
+            <div class="score-bar-wrapper">
+              <div id="scoreBar" class="score-bar"></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-item">
+                <span class="stat-num" id="flagCount">0</span>
+                <span class="stat-label">Flags Triggered</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num" id="scoreDisplay">0</span>
+                <span class="stat-label">Risk Score</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="flags-section">
+          <div class="flags-title-row">
+            <h3 class="flags-title">Detection Details</h3>
+            <span class="flags-subtitle">Triggered rules and patterns</span>
+          </div>
+          <ul id="flagsList" class="flags-list"></ul>
+        </div>
+
+        <button class="btn btn-secondary" onclick="clearAll()">
+          &#8635;&nbsp; Clear &amp; Analyze Another
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo-icon">&#9670;</span>
+          <span class="nav-logo-text">PhishGuard</span>
+          <p>Rule-based fraud detection.<br>No ML. No accounts. No data collection.</p>
+        </div>
+        <div class="footer-links-col">
+          <span class="footer-col-title">Tool</span>
+          <a href="#analyzer">Analyze Email</a>
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+        </div>
+        <div class="footer-links-col">
+          <span class="footer-col-title">Detection</span>
+          <a href="#features">Phishing</a>
+          <a href="#features">Financial Fraud</a>
+          <a href="#features">Impersonation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PhishGuard &nbsp;·&nbsp; Built as a college PBL project</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
